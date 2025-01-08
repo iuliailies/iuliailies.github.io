@@ -1,0 +1,21 @@
+/* Section Styles */
+.section {
+    border-top: 1px solid rgba(70, 70, 70, 0.443);
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .meaning i {
+    font-size: 3rem;
+    color: #f4a261;
+    margin-bottom: 10px;
+  }
+  
+  .meanings-grid {
+    position: relative;
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  

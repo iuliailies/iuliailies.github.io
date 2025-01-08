@@ -1,0 +1,63 @@
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+  }
+  
+  /* Burger Menu Styles */
+  .burger-menu {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+  }
+  
+  .burger-menu i {
+    color: white;
+  }
+  
+  /* Mobile-Specific Styles */
+  @media (max-width: 768px) {
+    .burger-menu {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      background: #333;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      width: 100%;
+      padding: 10px 0;
+    }
+  
+    .nav-links.active {
+      display: flex;
+    }
+  
+    .nav-links li {
+      text-align: center;
+      margin: 10px 0;
+    }
+  }
+  
