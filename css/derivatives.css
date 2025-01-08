@@ -8,7 +8,7 @@
   
   .derivative-card {
     padding: 20px;
-    border: 2px solid #d17a40;
+    border: 2px solid #a8522c;
     background: #fef3e0;
     border-radius: 8px;
     text-align: center;
@@ -18,7 +18,7 @@
   .derivative-card h3 {
     margin-bottom: 10px;
     font-size: 1.5rem;
-    color: #d17a40;
+    color: #a8522c;
   }
   
   .derivative-card:hover {
