@@ -2,6 +2,7 @@
 .hero {
     height: 80vh;
     background: url('../images/heading.jpg') no-repeat center center/cover;
+    background-color: #333; /* Dark fallback color for accessibility */
     position: relative;
     text-align: center;
     display: flex;
