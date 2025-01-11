@@ -2,6 +2,7 @@
 .showcase-container {
     position: relative;
     display: flex;
+    flex-direction: column;
     gap: 30px;
     flex-wrap: wrap;
     justify-content: center;
@@ -34,7 +35,7 @@
     border: 1px solid #00796b;
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 430px) {
     .responsive-box .box-item {
       flex: 1 1 100%;
     }
@@ -53,3 +54,59 @@
     cursor: pointer;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   }
+
+/* Interactive Example */
+.interactive-box {
+  position: relative;
+  width: 100%;
+  height: 300px;
+  margin: 20px auto;
+  border: 2px solid #00796b;
+  background: #e0f7fa;
+  overflow: hidden;
+  text-align: center;
+}
+
+.circle {
+  width: 50px; 
+  height: 50px; 
+  background: #b2ebf2;
+  border: 2px solid #00796b;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease; 
+  cursor: pointer;
+}
+
+.tap-instruction {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  color: #00796b;
+  font-weight: bold;
+}
+
+/* Reset Button */
+.reset-button {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 15px;
+  font-size: 1rem;
+  background: #a8522c;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.reset-button:hover {
+  background: #e76f51;
+}

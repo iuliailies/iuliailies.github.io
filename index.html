@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="css/showcase.css">
   <link rel="stylesheet" href="css/derivatives.css">
   <link rel="stylesheet" href="css/history.css">
+  <link rel="stylesheet" href="css/perspectives.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.29.0/themes/prism-tomorrow.min.css" />
 </head>
@@ -25,8 +26,10 @@
       <ul class="nav-links" id="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#meanings">Meanings</a></li>
-        <li><a href="#showcase">Responsiveness in Web Design</a></li>
+        <li><a href="#showcase">Examples</a></li>
         <li><a href="#history">History</a></li>
+        <li><a href="#perspectives">Perspectives</a></li>
+        <li><a href="#derivatives">Derivatives</a></li>
       </ul>
     </nav>
   </header>
@@ -70,9 +73,9 @@
   <!-- Responsiveness in Web Design -->
   <section id="showcase" class="section">
     <h2>Responsiveness in Web Design</h2>
-    <p>Resize the window to see how the layout behaves in a Responsive design.</p>
+    <p>Some examples of how responsiveness could be integrated in web design.</p>
     <div class="showcase-container">
-      <div class="try-me-tag">Try Me Out</div>
+      <div class="try-me-tag">Resize the window</div>
       <!-- Responsive Example -->
       <div class="example">
         <h4>Responsive Layout</h4>
@@ -84,23 +87,31 @@
           </div>
         </div>
         <pre class="code-block">
-<code class="language-css">
-/* Responsive CSS */
-.box-inner {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.box-item {
-  flex: 1 1 calc(33% - 10px);
-}
-@media (max-width: 768px) {
-  .box-item {
-    flex: 1 1 100%;
+  <code class="language-css">
+  /* Responsive CSS */
+  .box-inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
   }
-}
-</code>
+  .box-item {
+    flex: 1 1 calc(33% - 10px);
+  }
+  @media (max-width: 768px) {
+    .box-item {
+      flex: 1 1 100%;
+    }
+  }
+  </code>
         </pre>
+      </div>
+      <div class="example">
+        <h4>Interactive Example</h4>
+        <div class="interactive-box">
+          <div class="circle"></div>
+          <p class="tap-instruction">Tap or Click Me!</p>
+          <button class="reset-button">Reset</button>
+        </div>
       </div>
     </div>
   </section>
@@ -121,6 +132,29 @@
           <li><strong>2018:</strong> The introduction of <strong>CSS Grid</strong> and the increasing popularity of <strong>flexbox</strong> revolutionized responsive layout creation.</li>
           <li><strong>Today:</strong> Responsiveness is a core principle of web design, ensuring that websites are accessible and functional across a wide range of devices and screen sizes.</li>
         </ul>
+      </div>
+    </section>
+
+    <!-- Perspectives Section -->
+    <section id="perspectives" class="section">
+      <h2>What Does "Responsive" Mean to Others?</h2>
+      <div class="perspectives-grid">
+        <div class="perspective-card">
+          <p>"As a software developer, being responsive means creating adaptable and user-friendly interfaces."</p>
+          <span>- My friend, Iulia, Software Engineer</span>
+        </div>
+        <div class="perspective-card">
+          <p>"Makes me think of a person that's not in a coma."</p>
+          <span>- My friend, Alex, Software Engineer</span>
+        </div>
+        <div class="perspective-card">
+          <p>"I think it means being quick to help someone, like paying attention when they need something."</p>
+          <span>- My mom, Zorica, Teacher</span>
+        </div>
+        <div class="perspective-card">
+          <p>"For example, a system that smoothly and switftly adapts to various user inputs is responsive."</p>
+          <span>- My friend, Diana, Psychologist</span>
+        </div>
       </div>
     </section>
 

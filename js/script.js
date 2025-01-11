@@ -55,3 +55,46 @@ goToTopButton.addEventListener('click', () => {
     behavior: 'smooth'
   });
 });
+
+
+// Circle Moving Away on Click
+const interactiveBox = document.querySelector('.interactive-box');
+const circle = document.querySelector('.circle');
+
+circle.addEventListener('click', (e) => {
+  // Get dimensions of the box
+  const boxRect = interactiveBox.getBoundingClientRect();
+
+  // Calculate random position for the circle within the box
+  const circleSize = circle.offsetWidth; // Circle's size (assuming width = height)
+  const maxX = boxRect.width - circleSize; // Max X position (box width - circle width)
+  const maxY = boxRect.height - circleSize; // Max Y position (box height - circle height)
+
+  const randomX = Math.random() / 2 * maxX; // Random X within the box
+  const randomY = Math.random() / 2 * maxY; // Random Y within the box
+
+  // Apply the new position, keeping the circle fully visible inside the box
+  circle.style.transform = `translate(${randomX}px, ${randomY}px)`;
+});
+
+const resetButton = document.querySelector('.reset-button');
+resetButton.addEventListener('click', () => {
+  // Center the circle by resetting top and left
+  circle.style.top = '50%';
+  circle.style.left = '50%';
+
+  // Apply translate(-50%, -50%) to center the circle relative to its dimensions
+  circle.style.transform = 'translate(-50%, -50%)';
+});
+
+const exampleTag = document.querySelector('.try-me-tag');
+
+const updateExampleTagText = () => {
+  if (window.innerWidth <= 430) {
+    exampleTag.textContent = 'Flip the phone';
+  } else {
+    exampleTag.textContent = 'Resize the screen';
+  }
+};
+
+updateExampleTagText();

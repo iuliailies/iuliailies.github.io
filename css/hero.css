@@ -43,6 +43,7 @@
   @media (max-width: 768px) {
     .hero {
       background: url('../images/heading.jpg') no-repeat center top/cover;
+      background-color: #333;
     }
   
     .hero-content h1 {
