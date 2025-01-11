@@ -87,22 +87,22 @@
           </div>
         </div>
         <pre class="code-block">
-  <code class="language-css">
-  /* Responsive CSS */
-  .box-inner {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-  }
+<code class="language-css">
+/* Responsive CSS */
+.box-inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.box-item {
+  flex: 1 1 calc(33%-10px);
+}
+@media (max-width:768px) {
   .box-item {
-    flex: 1 1 calc(33% - 10px);
+    flex: 1 1 100%;
   }
-  @media (max-width: 768px) {
-    .box-item {
-      flex: 1 1 100%;
-    }
-  }
-  </code>
+}
+</code>
         </pre>
       </div>
       <div class="example">

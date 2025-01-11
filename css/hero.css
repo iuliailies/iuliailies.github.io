@@ -37,6 +37,7 @@
   .hero-content p {
     font-size: 1.5rem;
     margin-bottom: 20px;
+    padding: 0px 10px;
   }
   
   /* Hero Section for Mobile */
