@@ -14,6 +14,10 @@
     margin-top: 10px; /* Add space between description and example */
     text-align: center; /* Align text to the center */
   }
+
+  .example h3 {
+    font-size: 1rem;
+  }
   
   .responsive-box {
     padding: 20px;
