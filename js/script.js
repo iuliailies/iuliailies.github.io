@@ -98,3 +98,22 @@ const updateExampleTagText = () => {
 };
 
 updateExampleTagText();
+
+// Accordion Toggle Functionality
+const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+accordionHeaders.forEach(header => {
+  header.addEventListener('click', () => {
+    const accordionItem = header.parentElement;
+
+    // Close other open items
+    document.querySelectorAll('.accordion-item').forEach(item => {
+      if (item !== accordionItem) {
+        item.classList.remove('active');
+      }
+    });
+
+    // Toggle the current item
+    accordionItem.classList.toggle('active');
+  });
+});

@@ -9,16 +9,17 @@
   }
   
   .example {
-    flex: 1 1 calc(50% - 40px);
-    min-width: 300px;
-    text-align: left;
+    font-style: italic;
+    color: #555;
+    margin-top: 10px; /* Add space between description and example */
+    text-align: center; /* Align text to the center */
   }
   
   .responsive-box {
     padding: 20px;
     border: 2px solid #00796b;
     background: #e0f7fa;
-    margin-bottom: 20px;
+    margin: 20px 0px;
   }
   
   .box-inner {
@@ -35,7 +36,7 @@
     border: 1px solid #00796b;
   }
   
-  @media (max-width: 430px) {
+  @media (max-width: 500px) {
     .responsive-box .box-item {
       flex: 1 1 100%;
     }
